@@ -1,0 +1,17 @@
+//Chatbot's brain
+! version  = 2.0
+
+// ! var num = 37555
+
++ set #
+- <set num=<star>>
+
+//Wildcard for anything entered by the user
++ #
+* <star> > <get num> => Choose a lower number
+* <star> < <get num> => Choose a higher number
+* <star> == <get num> => You got it!
+
+//Wildcard for anything entered by the user
++ *
+- Guess a number between 0 and 10
